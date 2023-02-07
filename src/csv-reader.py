@@ -11,7 +11,7 @@ d = {}
 keys = None
 rows = []
 with open(fp, "r", encoding="utf-8") as f:
-    csvfile = csv.reader(f, dialect="excel", delimiter=",", quotechar='"')
+    csvfile = csv.reader(f, delimiter=",", quotechar='"')
     for i, row in enumerate(csvfile):
         if i == 0:
             keys = row
